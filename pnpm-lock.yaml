@@ -8,7 +8,9 @@ specifiers:
   '@trpc/next': ^10.9.0
   '@trpc/react-query': ^10.9.0
   '@trpc/server': ^10.9.0
+  '@types/dom-parser': ^0.1.1
   '@types/eslint': ^8.21.1
+  '@types/marked': ^4.0.8
   '@types/node': ^18.14.0
   '@types/prettier': ^2.7.2
   '@types/react': ^18.0.28
@@ -21,6 +23,7 @@ specifiers:
   eslint: ^8.34.0
   eslint-config-next: ^13.2.1
   lucide-react: ^0.124.0
+  marked: ^4.2.12
   next: ^13.2.1
   next-auth: ^4.19.0
   postcss: ^8.4.14
@@ -44,9 +47,12 @@ dependencies:
   '@trpc/next': 10.14.0_yf32ovkked5vr7aayspt5ctp64
   '@trpc/react-query': 10.14.0_4pqoitdl65f6hbwuj4o2xagtj4
   '@trpc/server': 10.14.0
+  '@types/dom-parser': 0.1.1
+  '@types/marked': 4.0.8
   class-variance-authority: 0.4.0_typescript@4.9.5
   clsx: 1.2.1
   lucide-react: 0.124.0_react@18.2.0
+  marked: 4.2.12
   next: 13.2.3_biqbaboplfbrettd7655fr4n2y
   next-auth: 4.20.1_nvzgbose6yf6w7ijjprgspqefi
   react: 18.2.0
@@ -398,6 +404,10 @@ packages:
     resolution: {integrity: sha512-hNnvwkSfqpIb89CH8pTV8VkldS9qjd3ZxaCgya7CeCk6QeDajT/bRX9bPmrkEe0UQtrbbPU5h47nuMrBsN2ghQ==}
     dev: false
 
+  /@types/dom-parser/0.1.1:
+    resolution: {integrity: sha512-/kFdfefUzcrPclXoo86+31GN6Ww/UhzrC4U7eiW/M6mTNOfzgEl8etv7AtmkoelpYDE4EoUAwZIt5x1D693CaA==}
+    dev: false
+
   /@types/eslint/8.21.1:
     resolution: {integrity: sha512-rc9K8ZpVjNcLs8Fp0dkozd5Pt2Apk1glO4Vgz8ix1u6yFByxfqo5Yavpy65o+93TAe24jr7v+eSBtFLvOQtCRQ==}
     dependencies:
@@ -416,6 +426,10 @@ packages:
   /@types/json5/0.0.29:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
+
+  /@types/marked/4.0.8:
+    resolution: {integrity: sha512-HVNzMT5QlWCOdeuBsgXP8EZzKUf0+AXzN+sLmjvaB3ZlLqO+e4u0uXrdw9ub69wBKFs+c6/pA4r9sy6cCDvImw==}
+    dev: false
 
   /@types/node/18.14.6:
     resolution: {integrity: sha512-93+VvleD3mXwlLI/xASjw0FzKcwzl3OdTCzm1LaRfqgS21gfFtK3zDXM5Op9TeeMsJVOaJ2VRDpT9q4Y3d0AvA==}
@@ -1931,6 +1945,12 @@ packages:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
     dependencies:
       react: 18.2.0
+    dev: false
+
+  /marked/4.2.12:
+    resolution: {integrity: sha512-yr8hSKa3Fv4D3jdZmtMMPghgVt6TWbk86WQaWhDloQjRSQhMMYCAro7jP7VDJrjjdV8pxVxMssXS8B8Y5DZ5aw==}
+    engines: {node: '>= 12'}
+    hasBin: true
     dev: false
 
   /merge2/1.4.1:
